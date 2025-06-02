@@ -150,34 +150,6 @@
     <section id="recipes">
       <h1>추천 레시피</h1>
       
-      <!-- 김치찌개 레시피 -->
-      <button id="toggle-kimchi">김치찌개 레시피 확인하기</button>
-      <div id="kimchi-recipe" class="recipe-container">
-        <h2>김치찌개 레시피</h2>
-        <!-- 사진 자리 – 추후 사진 링크 삽입 -->
-        <img class="kimchi.jpg" alt="김치찌개 이미지">
-        <h3>재료</h3>
-        <ul>
-          <li>신김치 300g</li>
-          <li>돼지고기(목살) 200g</li>
-          <li>두부 1/2모</li>
-          <li>양파 1개</li>
-          <li>대파 1대</li>
-          <li>고춧가루 2큰술</li>
-          <li>다진 마늘 1큰술</li>
-          <li>소금, 후추 약간</li>
-          <li>멸치 다시마 육수 4컵</li>
-        </ul>
-        <h3>조리 방법</h3>
-        <ol>
-          <li>돼지고기를 먹기 좋은 크기로 자르고, 양파는 채썰어줍니다.</li>
-          <li>냄비에 돼지고기를 볶다가 신김치를 넣고 함께 볶습니다.</li>
-          <li>고춧가루와 다진 마늘을 넣어 볶은 후, 멸치 다시마 육수를 부어 끓입니다.</li>
-          <li>양파와 대파를 넣고 끓인 후, 두부를 추가합니다.</li>
-          <li>약한 불에서 10분간 끓이고, 소금과 후추로 간을 맞추면 완성입니다.</li>
-        </ol>
-      </div>
-      
       <!-- 된장찌개 레시피 -->
       <button id="toggle-doenj">된장찌개 레시피 확인하기</button>
       <div id="doenjang-recipe" class="recipe-container">
@@ -272,17 +244,7 @@
       });
       
       // 레시피 토글 기능
-      document.getElementById('toggle-kimchi').addEventListener('click', function() {
-        const container = document.getElementById('kimchi-recipe');
-        if (container.style.display === 'block') {
-          container.style.display = 'none';
-          this.textContent = '김치찌개 레시피 확인하기';
-        } else {
-          container.style.display = 'block';
-          this.textContent = '김치찌개 레시피 숨기기';
-        }
-      });
-      
+
       document.getElementById('toggle-doenj').addEventListener('click', function() {
         const container = document.getElementById('doenjang-recipe');
         if (container.style.display === 'block') {
